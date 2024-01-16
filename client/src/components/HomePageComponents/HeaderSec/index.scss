@@ -1,0 +1,63 @@
+#header{
+    background-image: url("https://preview.colorlib.com/theme/educature/img/header-bg.png.webp");
+    padding: 150px 0;
+    color: white;
+    .content{
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+font-size: 50px;
+margin-bottom: 10px;
+        }
+        
+        .inp{
+            margin-bottom: 40px;
+            display: flex;
+            padding: 5px 10px;
+            justify-content: space-between;
+            background-color: white;
+            input{
+                outline: none;
+                border: none;
+                background-color: transparent;
+            }
+            .but{
+                padding: 10px 35px;
+                cursor: pointer;
+                display: inline-block;
+                background: rgb(56,197,201);
+                background: linear-gradient(90deg, rgba(56,197,201,1) 0%, rgba(51,132,189,1) 100%);
+                &:hover{
+                    background: rgb(51,132,189);
+background: linear-gradient(90deg, rgba(51,132,189,1) 0%, rgba(56,196,200,1) 100%);
+                }
+            }
+        }
+        .top{
+            h4{
+                font-weight: 300;
+                letter-spacing: 1px;
+                font-size: 21px;
+            }
+         .esas{
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            div{
+                margin: 5px;
+             display: flex;
+             justify-content: center;
+             align-items: center ;   
+padding: 15px;
+font-size: 12px;
+border: 1px solid white;
+height: 20px;
+            }
+         }   
+        }
+    }
+}

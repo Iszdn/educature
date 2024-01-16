@@ -1,0 +1,79 @@
+.card-facul{
+    padding-top: 40%;
+    .content{
+        text-align: center;
+        position: relative;
+        .image{
+max-width: 163px;
+margin: 0 auto;
+position: absolute;
+top:-35%;
+left: 50%;
+transform: translateX(-50%);
+
+        }
+     .info{
+        padding: 60px 30px;
+        background-color: white;
+        h4{
+margin-top: 10px;
+        }
+        h6{
+color: #777777;
+font-weight: 300;
+margin-bottom: 20px;
+        }
+        p{
+            color: #777777;
+
+        }
+        .sosials{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+            span{
+                color: #777777;
+            }
+        }
+     }   
+    }
+}
+@media screen  and (max-width:1246px){
+    .card-facul{
+        padding-top: 70%;
+        .content{
+            text-align: center;
+            position: relative;
+            .image{
+    max-width: 163px;
+    margin: 0 auto;
+    position: absolute;
+    top:-24%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+            }
+          
+        }
+    }
+}
+@media screen  and (max-width:992px){
+    .card-facul{
+        padding-top: 45%;
+        .content{
+            text-align: center;
+            position: relative;
+            .image{
+    max-width: 163px;
+    margin: 0 auto;
+    position: absolute;
+    top:-40%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+            }
+          
+        }
+    }
+}

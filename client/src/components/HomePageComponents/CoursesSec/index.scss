@@ -1,0 +1,29 @@
+#courses{
+    padding: 80px 0;
+    .content{
+        padding-top: 50px;
+        
+        h2{
+font-size: 42px;
+font-weight: 700;
+max-width: 400px;
+       
+        }
+        p{
+            padding: 20px 0;
+            color: #777777;
+        }
+        .but{
+            border-radius: 5px;
+            padding: 10px 35px;
+            cursor: pointer;
+            display: inline-block;
+            background: rgb(56,197,201);
+            background: linear-gradient(90deg, rgba(56,197,201,1) 0%, rgba(51,132,189,1) 100%);
+            &:hover{
+                background: rgb(51,132,189);
+background: linear-gradient(90deg, rgba(51,132,189,1) 0%, rgba(56,196,200,1) 100%);
+            }
+        }
+    }
+}
