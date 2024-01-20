@@ -1,7 +1,26 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 form{
+    padding: 100px;
+    border-radius: 20px;
+color: white;
+    background: rgb(51,132,189);
+background: linear-gradient(90deg, rgba(51,132,189,1) 0%, rgba(56,196,200,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    input{
+        border-radius: 50px;
+        border: none;
+
+    }
+    div{
+        color: red;
+    }
+}    
 }

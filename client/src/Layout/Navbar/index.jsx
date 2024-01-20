@@ -3,8 +3,13 @@ import "./index.scss"
 import { NavLink } from 'react-router-dom'
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
+import { useContext } from 'react';
+import { WishlistContext } from '../../context/WishlistContext';
+import { BasketContext } from '../../context/BasketContext';
 
 const Navbar = () => {
+    const {wish}=useContext(WishlistContext)
+    const {basket}=useContext(BasketContext)
   return (
     <nav id='navbar'>
 <div className="nav">
@@ -27,10 +32,14 @@ const Navbar = () => {
                 <NavLink activeClassName="active" to="/pages">Pages</NavLink>
             </li>
             <li>
-                <NavLink activeClassName="active" to="/wish"><span><IoMdHeartEmpty /></span></NavLink>
+                <NavLink activeClassName="active" to="/wish"><span><IoMdHeartEmpty /></span>{
+                wish.length!==0  ?  <span className='wishLo'>{wish.length}</span> : <span></span> 
+                }</NavLink>
             </li>
             <li>
-                <NavLink activeClassName="active" to="/cart"><span><IoCartOutline /></span></NavLink>
+                <NavLink activeClassName="active" to="/cart"><span><IoCartOutline /></span>
+                { wish.length!==0  ? <span className='wishLo'>{basket.length}</span>   : <span></span> 
+}</NavLink>
             </li>
         </ul>
     </div>

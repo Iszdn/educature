@@ -6,10 +6,10 @@ import { PiShoppingCartThin } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 const CartPage = () => {
   const {basket,increaseBasket,decreaseBasket,deleteBasket}=useContext(BasketContext)
-  const subtotal=basket.reduce((basketTotal,basketItem)=>basketTotal+(basketItem.count*basketItem.price),0)
-  
+  // const subtotal=basket.reduce((basketTotal,basketItem)=>basketTotal+(basketItem.count*basketItem.price),0)
+ const subtotal=basket.reduce((basketTotal,basketItem)=>basketTotal+(basketItem.count*basketItem.price),0)
   return (
-    <div className='container'>
+    <div className='cart container'>
       
         {
           basket.length===0 ? <div>Cart is empty</div> : 

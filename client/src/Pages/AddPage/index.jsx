@@ -19,15 +19,15 @@ getData()
   }, [])
   
   return (
-    <div>
+    <div className='add'>
       <FormAdd getData={getData}/>
       <div className="filter">
-        <input type="search" value={search} onChange={(e)=>setSearch(e.target.value)} />
-        <button onClick={()=>setProperty({name:"title",asc:null})}>default</button>
-        <button onClick={()=>setProperty({name:"title",asc:true})}>a-z</button>
-        <button onClick={()=>setProperty({name:"title",asc:false})}>z-a</button>
-        <button onClick={()=>setProperty({name:"price",asc:true})}>inc</button>
-        <button onClick={()=>setProperty({name:"price",asc:false})}>dec</button>
+        <input placeholder='search' type="search" value={search} onChange={(e)=>setSearch(e.target.value)} />
+        <button className='btn' onClick={()=>setProperty({name:"title",asc:null})}>default</button>
+        <button className='btn' onClick={()=>setProperty({name:"title",asc:true})}>a-z</button>
+        <button className='btn' onClick={()=>setProperty({name:"title",asc:false})}>z-a</button>
+        <button className='btn' onClick={()=>setProperty({name:"price",asc:true})}>inc</button>
+        <button className='btn' onClick={()=>setProperty({name:"price",asc:false})}>dec</button>
       </div>
       <div className="overflow-x-auto">
   <table className="table">
@@ -59,11 +59,11 @@ getData()
      })
      .map(x=>
       <tr key={x._id}>
-        <th>{x.icon}</th>
-        <th>{x.title}</th>
-        <th>{x.desc}</th>
-        <th>{x.price}</th>
-        <th><button onClick={()=>deleteData(x._id)}>del</button></th>
+        <td>{x.icon}</td>
+        <td>{x.title}</td>
+        <td>{x.desc}</td>
+        <td>{x.price}</td>
+        <td><button className='btn' onClick={()=>deleteData(x._id)}>del</button></td>
       </tr>
        
       ) 

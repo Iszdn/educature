@@ -1,0 +1,22 @@
+.add{
+    height: 100%;
+    .filter{
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            border-radius: 50px;
+        border: none;
+        padding: 7px;
+        outline: none;
+        border: 1px solid lightblue;
+        }
+    }
+table,tr,th,td{
+    color: white !important;
+    border: 1px solid white;
+    background: rgb(51,132,189);
+background: linear-gradient(90deg, rgba(51,132,189,1) 0%, rgba(56,196,200,1) 100%);
+}
+}

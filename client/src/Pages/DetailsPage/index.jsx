@@ -15,7 +15,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div>
+    <div className='det'>
 {
   data && <Card {...data}/>
 }

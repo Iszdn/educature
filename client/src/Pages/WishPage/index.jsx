@@ -11,7 +11,7 @@ const WishPage = () => {
   const {wish,deleteWish}=useContext(WishlistContext)
   
   return (
-    <div className='container'>
+    <div className='det container'>
       
         {
           wish.length===0 ? <div>wishlist is empty</div> : 

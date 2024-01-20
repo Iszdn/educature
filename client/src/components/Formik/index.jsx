@@ -35,7 +35,8 @@ async function addFeature(values) {
     },
   });
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <div className="form">
+      <form onSubmit={formik.handleSubmit}>
       <label htmlFor="icon">icon</label>
       <input
         id="icon"
@@ -90,8 +91,10 @@ async function addFeature(values) {
         <div>{formik.errors.price}</div>
       ) : null}
 
-      <button type="submit">Add</button>
-    </form>
+      <button className='btn' type="submit">Add</button>
+    </form> 
+    </div>
+   
   )
 }
 
